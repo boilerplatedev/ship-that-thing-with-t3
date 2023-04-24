@@ -5,13 +5,19 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "postinstall": "prisma generate",
     "lint": "next lint",
     "start": "next start",
+    "generate": "yarn-or-npm prisma:generate",
+    "prisma:reset": "yarn-or-npm prisma:migrate reset",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "postinstall": "yarn-or-npm generate",
     "prepare": "is-ci || husky install",
     "commit": "cz"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.1.0",
     "@next-auth/prisma-adapter": "^1.0.5",
     "@prisma/client": "^4.11.0",
     "@tanstack/react-query": "^4.28.0",
@@ -27,6 +33,7 @@
     "nodemailer": "^6.9.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
     "react-icons": "^4.8.0",
     "superjson": "1.12.3",
     "tailwind-merge": "^1.12.0",
@@ -56,7 +63,8 @@
     "prettier-plugin-tailwindcss": "^0.2.6",
     "prisma": "^4.11.0",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.2",
+    "yarn-or-npm": "^3.0.1"
   },
   "ct3aMetadata": {
     "initVersion": "7.11.0"
