@@ -12,6 +12,8 @@ This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3
 - `utils/cn`: a good helper utility that combines `clsx` and `tailwind-merge`.
 - [Convential commit](https://www.conventionalcommits.org/en/v1.0.0/) messages are setup via `commitlint` and `commitizen`. All the setup is done. If your commit messages don't follow that convention, it won't let you commit. Feel free to use another convention.
   - A helper NPM script `commit` has been added. Running `npm run commit` or `yarn commit` will help you craft good commit messages.
+- `src/clients/hooks/use-zod-form` is a reusable hook on top of `react-hook-form` and `zod` to make client side validations easy.
+- A bunch of helpful `prisma` commands have been added to `package.json::scripts`.
 
 > + All the other features offered by the `T3 Stack` setup.
 
