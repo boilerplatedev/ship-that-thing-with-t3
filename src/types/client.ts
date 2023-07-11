@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { inferRouterInputs, inferRouterOutputs } from "@trpc/server";
 
 import { type AppRouter } from "@/server/api/root";
